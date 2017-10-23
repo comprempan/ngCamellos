@@ -1,0 +1,10 @@
+{
+    "major": "1",
+    "minor": "0",
+    "servicePack": "0",
+    
+    "nexusUser": "paradigma", 
+    "nexusPassword": "paradigma", 
+    "nexusUrlRelease": "http://mavenrepo.paradigmatecnologico.com/content/repositories/releases/",
+    "nexusUrlSnapshot": "http://mavenrepo.paradigmatecnologico.com/content/repositories/snapshots/"
+}

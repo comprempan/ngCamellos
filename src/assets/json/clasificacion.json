@@ -1,0 +1,178 @@
+[
+	{
+		"id": "3",
+	 	"name": "FS Selección Botellín",	 
+	 	"jugados" : "7",
+	 	"ganados":"6",
+	 	"empatados": "0",
+	 	"perdidos": "1",
+	 	"golesFavor": "40",
+	 	"golesContra": "13",
+	 	"puntos": "18"
+	},
+	{
+		"id": "15",
+	 	"name": "FS Pichanfles",	 
+	 	"jugados" : "7",
+	 	"ganados":"5",
+	 	"empatados": "1",
+	 	"perdidos": "1",
+	 	"golesFavor": "34",
+	 	"golesContra": "18",
+	 	"puntos": "16"
+	},
+		{
+		"id": "2",
+	 	"name": "FS Luz Casanova",	 
+	 	"jugados" : "7",
+	 	"ganados":"4",
+	 	"empatados": "3",
+	 	"perdidos": "0",
+	 	"golesFavor": "26",
+	 	"golesContra": "17",
+	 	"puntos": "15"
+	},
+	{
+		"id": "4",
+	 	"name": "FS La Bombonera",	 
+	 	"jugados" : "7",
+	 	"ganados":"5",
+	 	"empatados": "6",
+	 	"perdidos": "2",
+	 	"golesFavor": "24",
+	 	"golesContra": "15",
+	 	"puntos": "15"
+	},
+	{
+		"id": "13",
+	 	"name": "Cavs FS",	 
+	 	"jugados" : "7",
+	 	"ganados":"4",
+	 	"empatados": "2",
+	 	"perdidos": "1",
+	 	"golesFavor": "33",
+	 	"golesContra": "20",
+	 	"puntos": "14"
+	},
+	{
+		"id": "9",
+	 	"name": "FS Kiwana All Star",	 
+	 	"jugados" : "6",
+	 	"ganados":"4",
+	 	"empatados": "0",
+	 	"perdidos": "2",
+	 	"golesFavor": "31",
+	 	"golesContra": "22",
+	 	"puntos": "12"
+	},
+	{
+		"id": "1",
+	 	"name": "ADIL FS",	 
+	 	"jugados" : "6",
+	 	"ganados":"3",
+	 	"empatados": "1",
+	 	"perdidos": "2",
+	 	"golesFavor": "33",
+	 	"golesContra": "20",
+	 	"puntos": "10"
+	},
+	{
+		"id": "7",
+	 	"name": "FS Galicia",	 
+	 	"jugados" : "6",
+	 	"ganados":"3",
+	 	"empatados": "1",
+	 	"perdidos": "2",
+	 	"golesFavor": "26",
+	 	"golesContra": "22",
+	 	"puntos": "10"
+	},
+		{
+		"id": "10",
+	 	"name": "FS Los Míticos",	 
+	 	"jugados" : "6",
+	 	"ganados":"2",
+	 	"empatados": "0",
+	 	"perdidos": "4",
+	 	"golesFavor": "19",
+	 	"golesContra": "27",
+	 	"puntos": "6"
+	},
+	{
+		"id": "8",
+	 	"name": "FS Puro Perú",	 
+	 	"jugados" : "6",
+	 	"ganados":"1",
+	 	"empatados": "2",
+	 	"perdidos": "3",
+	 	"golesFavor": "16",
+	 	"golesContra": "24",
+	 	"puntos": "5"
+	},
+	{
+		"id": "5",
+	 	"name": "FS Sport Leganés",	 
+	 	"jugados" : "7",
+	 	"ganados":"1",
+	 	"empatados": "2",
+	 	"perdidos": "4",
+	 	"golesFavor": "17",
+	 	"golesContra": "24",
+	 	"puntos": "5"
+	},
+	{
+		"id": "6",
+	 	"name": "Cafu Ole FS",	 
+	 	"jugados" : "8",
+	 	"ganados":"1",
+	 	"empatados": "2",
+	 	"perdidos": "5",
+	 	"golesFavor": "21",
+	 	"golesContra": "34",
+	 	"puntos": "5"
+	},
+	{
+		"id": "11",
+	 	"name": "FS Camellos",	 
+	 	"jugados" : "7",
+	 	"ganados":"1",
+	 	"empatados": "0",
+	 	"perdidos": "6",
+	 	"golesFavor": "22",
+	 	"golesContra": "48",
+	 	"puntos": "3"
+	},
+	{
+		"id": "12",
+	 	"name": "Leganes FS Red Devils ",	 
+	 	"jugados" : "7",
+	 	"ganados":"1",
+	 	"empatados": "0",
+	 	"perdidos": "7",
+	 	"golesFavor": "20",
+	 	"golesContra": "52",
+	 	"puntos": "3"
+	},
+	{
+		"id": "14",
+	 	"name": "FS AT Trabenco",	 
+	 	"jugados" : "1",
+	 	"ganados":"0",
+	 	"empatados": "0",
+	 	"perdidos": "1",
+	 	"golesFavor": "0",
+	 	"golesContra": "1",
+	 	"puntos": "-1"
+	},	
+	{
+		"id": "16",
+	 	"name": "Descansa",	 
+	 	"jugados" : "8",
+	 	"ganados":"0",
+	 	"empatados": "0",
+	 	"perdidos": "0",
+	 	"golesFavor": "0",
+	 	"golesContra": "0",
+	 	"puntos": "0"
+	}
+]

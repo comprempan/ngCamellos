@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Camellos fs</title>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="humans.txt">
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" />
+    <base href="/"></base>
+    <meta property="fb:page_id" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<script src="//localhost:38729/livereload.js"></script>
+		<!-- check if neccesary -->
+		<script src="assets/js/libs/angular/angular.js"></script>
+		<script src="assets/js/libs/angular/angular-animate.js"></script>
+		<!--UI Router -->
+		<script src="assets/js/libs/angular/angular-ui-router.min.js"></script>
+		<script src="assets/js/libs/angular/ngStorage.min.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main" ui-view></div>
+    <script src="assets/js/cm.config.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/views/templates.js"></script>
+        <!--components-->
+        <script src="app/components/header/header.component.js"></script>
+		<!-- shared -->
+		<script src="app/shared/api.service.js"></script>
+        <script src="app/shared/matches.service.js"></script>
+		<script src="app/shared/router.service.js"></script>
+		<script src="app/shared/ngEnter.directive.js"></script>
+		<!-- End shared -->
+		<!--home-->
+		<script src="app/home/home.controller.js"></script>
+		<!-- End home -->
+
+</body>
+
+</html>

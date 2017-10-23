@@ -1,0 +1,23 @@
+<header>
+	<div id="title">
+		<h1>f.s. Camellos</h1>
+	</div>
+	<div id="menu">
+		<nav>
+			<div id="mobile-header" class="hide-on-desktops hide-on-tablets">
+				<a id="responsive-menu-button" href="#sidr">Menu</a>
+			</div>
+			<div id="mainMenuContainer" class="hide-on-phones">
+				<ul>
+					<li ng-repeat="option in vm.menuOptions">
+						<a class="navigation"
+							ui-sref="{{option.href}}"
+							ui-sref-active="active">
+							{{option.text}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
