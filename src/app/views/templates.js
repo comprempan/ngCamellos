@@ -33,647 +33,109 @@ angular.module("app/home/home-content.html", []).run(["$templateCache", function
     "<p ng-if=\"vm.loading\">cargando</p>\n" +
     "<div id=\"content\" ng-if=\"!vm.loading\">\n" +
     "    <section class=\"row\">\n" +
-    "        <div class=\"results column g-10 centered\">\n" +
+    "        <div class=\"results column g-6\">\n" +
     "            <table>\n" +
     "                <thead>\n" +
     "                    <tr>\n" +
-    "                        <th colspan=\"4\">Jornada 1</th>\n" +
+    "                        <th colspan=\"4\">{{vm.previousMatch.name}} ({{vm.previousMatch.fecha | date : \"dd-MM-yyyy\"}})</th>\n" +
     "                    </tr>\n" +
+    "                </thead>\n" +
+    "                <tbody>\n" +
+    "                    <tr \n" +
+    "                        ng-class=\"{'camellos': match.local === 'FS Camellos' || match.visitante === 'FS Camellos'}\"\n" +
+    "                        ng-repeat=\"match in vm.previousMatch.partidos\">\n" +
+    "                        <td>\n" +
+    "                            {{match.local}}\n" +
+    "                        </td>\n" +
+    "                        <td>\n" +
+    "                            {{match.golesLocales}}\n" +
+    "                        </td>\n" +
+    "                        <td>\n" +
+    "                            {{match.golesVisitantes}}\n" +
+    "                        </td>\n" +
+    "                        <td>\n" +
+    "                            {{match.visitante}}\n" +
+    "                        </td>\n" +
+    "                    </tr>\n" +
+    "                </tbody>\n" +
+    "            </table>\n" +
+    "        </div>\n" +
+    "        <div class=\"results column g-6\">\n" +
+    "            <table>\n" +
+    "                <thead>\n" +
     "                    <tr>\n" +
+    "                        <th colspan=\"4\">{{vm.nextMatch.name}} ({{vm.nextMatch.fecha | date : \"dd-MM-yyyy\"}})</th>\n" +
     "                    </tr>\n" +
-    "                    </thead>\n" +
-    "                    <tbody>\n" +
-    "                        <tr class=\"descansa \">\n" +
-    "                            <td>\n" +
-    "                                Descansa\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                -\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                -\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS Pichanfles <span class=\"hide-on-phones\">Evolution</span>\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr>\n" +
-    "                            <td>\n" +
-    "                                FS La Bombonera RC\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                3\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                1\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS Kiwana All Star\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr>\n" +
-    "                            <td>\n" +
-    "                                Cafu Ole FS\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                3\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                3\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS Sport Leganes\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr>\n" +
-    "                            <td>\n" +
-    "                                Cavs FS\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                /\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                /\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                AT Trabenco\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr class=\"camellos\">\n" +
-    "                            <td>\n" +
-    "                                FS Camellos\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                1\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                6\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS Luz Casanova\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr>\n" +
-    "                            <td>\n" +
-    "                                FS Puro Peru\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                1\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                1\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS Galicia\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr>\n" +
-    "                            <td>\n" +
-    "                                Leganes FS Red Devils\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                3\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                13\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS ADIL\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                        <tr>\n" +
-    "                            <td>\n" +
-    "                                FS Selección Botellín\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                5\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                1\n" +
-    "                            </td>\n" +
-    "                            <td>\n" +
-    "                                FS Los Míticos <span class=\"hide-on-phones\"> de Leganes</span>\n" +
-    "                            </td>\n" +
-    "                        </tr>\n" +
-    "                    </tbody>\n" +
-    "                </table>\n" +
-    "            </div>\n" +
+    "                </thead>\n" +
+    "                <tbody>\n" +
+    "                    <tr \n" +
+    "                        ng-class=\"{'camellos': match.local === 'FS Camellos' || match.visitante === 'FS Camellos'}\"\n" +
+    "                        ng-repeat=\"match in vm.nextMatch.partidos\">\n" +
+    "                        <td>\n" +
+    "                            {{match.local}}\n" +
+    "                        </td>\n" +
+    "                        <td>\n" +
+    "                            {{match.golesLocales}}\n" +
+    "                        </td>\n" +
+    "                        <td>\n" +
+    "                            {{match.golesVisitantes}}\n" +
+    "                        </td>\n" +
+    "                        <td>\n" +
+    "                            {{match.visitante}}\n" +
+    "                        </td>\n" +
+    "                    </tr>\n" +
+    "                </tbody>\n" +
+    "            </table>\n" +
+    "        </div>\n" +
     "    </section>\n" +
-    "    <section>    <table id=\"clasificacion\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th>Posición</th>\n" +
-    "                <th>Equipo</th>\n" +
-    "                <th>PJ</th>\n" +
-    "                <th class=\"hide-on-phones\">PG</th>\n" +
-    "                <th class=\"hide-on-phones\">PE</th>\n" +
-    "                <th class=\"hide-on-phones\">PP</th>\n" +
-    "                <th>GF</th>\n" +
-    "                <th>GC</th>\n" +
-    "                <th>DG</th>\n" +
-    "                <th>PT</th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
+    "    <section>\n" +
+    "        <table id=\"clasificacion\">\n" +
+    "            <thead>\n" +
+    "                <tr>\n" +
+    "                    <th>Posición</th>\n" +
+    "                    <th>Equipo</th>\n" +
+    "                    <th>PJ</th>\n" +
+    "                    <th class=\"hide-on-phones\">PG</th>\n" +
+    "                    <th class=\"hide-on-phones\">PE</th>\n" +
+    "                    <th class=\"hide-on-phones\">PP</th>\n" +
+    "                    <th>GF</th>\n" +
+    "                    <th>GC</th>\n" +
+    "                    <th>DG</th>\n" +
+    "                    <th>PT</th>\n" +
+    "                </tr>\n" +
+    "            </thead>\n" +
+    "            <tbody>\n" +
+    "                <tr \n" +
+    "                    ng-class=\"{'camellos': team.name === 'FS Camellos'}\"\n" +
+    "                    ng-repeat=\"team in vm.clasification | orderBy:'puntos':true:vm.test\">\n" +
+    "                    <td>{{$index + 1}}</td>\n" +
+    "                    <td>{{team.name}}</td>\n" +
+    "                    <td>{{team.jugados}}</td>\n" +
+    "                    <td>{{team.ganados}}</td>\n" +
+    "                    <td>{{team.empatados}}</td>\n" +
+    "                    <td>{{team.perdidos}}</td>\n" +
+    "                    <td>{{team.golesFavor}}</td>\n" +
+    "                    <td>{{team.golesContra}}</td>\n" +
+    "                    <td>{{team.golesFavor - team.golesContra}}</td>\n" +
+    "                    <td>{{team.puntos}}</td>\n" +
+    "                </tr>\n" +
+    "            </tbody>\n" +
+    "        </table>\n" +
     "\n" +
-    "    <tbody>\n" +
+    "        <table class=\"friends\">\n" +
     "            <tr>\n" +
-    "        <td>\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Selección Botellín\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            40\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            13\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            27\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            18\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Pichanfles\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            34\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            18\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            16\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            16\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Luz Casanova\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            26\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            17\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            9\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            15\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS La Bombonera\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            24\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            15\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            9\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            21\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            Cavs FS\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            33\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            20\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            13\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            14\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Kiwana All Star\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            31\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            22\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            9\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            12\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            ADIL FS\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            33\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            20\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            13\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            10\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            8\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Galicia\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            26\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            22\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            10\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            9\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Los Míticos\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            19\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            27\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -8\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            10\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Puro Perú\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            16\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            24\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -8\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            11\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Sport Leganés\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            4\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            17\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            24\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -7\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            12\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            Cafu Ole FS\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            8\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            2\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            21\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            34\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -13\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            5\n" +
-    "        </td>\n" +
-    "    </tr>    <tr class=\"camellos\">\n" +
-    "        <td>\n" +
-    "            13\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS Camellos\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            6\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            22\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            48\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -26\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            14\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            Leganes FS Red Devils\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            7\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            20\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            52\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -32\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            3\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            15\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            FS AT Trabenco\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            1\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            -1\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "    </tr>    <tr>\n" +
-    "        <td>\n" +
-    "            16\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            Descansa\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            8\n" +
-    "        </td>\n" +
-    "        <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td class=\"hide-on-phones\">\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "         <td>\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "        <td>\n" +
-    "            0\n" +
-    "        </td>\n" +
-    "    </tr></tbody></table> </section>\n" +
+    "              <th>Name</th>\n" +
+    "              <th>Favorite Letter</th>\n" +
+    "            </tr>\n" +
+    "            <tr ng-repeat=\"friend in friends | orderBy:'favoriteLetter'\">\n" +
+    "              <td>{{friend.name}}</td>\n" +
+    "              <td>{{friend.favoriteLetter}}</td>\n" +
+    "            </tr>\n" +
+    "          </table>\n" +
+    "    </section>\n" +
     "</div>\n" +
+    "\n" +
+    "\n" +
     "");
 }]);
 
