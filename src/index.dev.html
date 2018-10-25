@@ -28,6 +28,8 @@
 		<!--UI Router -->
 		<script src="assets/js/libs/angular/angular-ui-router.min.js"></script>
     <script src="assets/js/libs/angular/ngStorage.min.js"></script>
+
+    <script src="assets/js/libs/moment-with-locales.min.js"></script>
     <!-- @endif -->
     <!-- @if NODE_ENV='deploy' -->
 		<script src="app/app.cm.header.js"></script>
@@ -52,7 +54,13 @@
 		<!-- End shared -->
 		<!--home-->
 		<script src="app/home/home.controller.js"></script>
-		<!-- End home -->
+    <!-- End home -->
+    <!--calendar-->
+		<script src="app/home/calendar.controller.js"></script>
+    <!-- End calendar -->
+        <!--calendar-->
+		<script src="app/home/results.controller.js"></script>
+		<!-- End calendar -->
 
     <!-- @endif -->
     <!-- @if NODE_ENV='deploy' -->

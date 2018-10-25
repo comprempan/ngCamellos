@@ -1,0 +1,32 @@
+<p ng-if="vm.loading">cargando</p>
+<div id="content" ng-if="!vm.loading">
+    <section class="row">
+        <div class="results column g-12">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Resultados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="match in vm.results">
+                        <td>
+                            {{match.local}}
+                        </td>
+                        <td>
+                            {{match.golesLocales}}
+                        </td>
+                        <td>
+                            {{match.golesVisitantes}}
+                        </td>
+                        <td>
+                            {{match.visitante}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+

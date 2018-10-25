@@ -1,7 +1,7 @@
 <p ng-if="vm.loading">cargando</p>
 <div id="content" ng-if="!vm.loading">
     <section class="row">
-        <div class="results column g-6">
+        <div class="results column g-6" ng-if="vm.previousMatch">
             <table>
                 <thead>
                     <tr>
@@ -13,22 +13,32 @@
                         ng-class="{'camellos': match.local === 'FS Camellos' || match.visitante === 'FS Camellos'}"
                         ng-repeat="match in vm.previousMatch.partidos">
                         <td>
-                            {{match.local}}
+                            <div ng-class="{'goles': match.goles}">
+                                {{match.local}}
+                                <ul ng-if="match.goles" ng-repeat="(name, num) in match.goles">
+                                    <li>{{name}}: num</li>
+                                </ul>
+                            </div>
                         </td>
                         <td>
-                            {{match.golesLocales}}
+                            <div>{{match.golesLocales}}</div>
                         </td>
                         <td>
-                            {{match.golesVisitantes}}
+                            <div>{{match.golesVisitantes}}</div>
                         </td>
                         <td>
-                            {{match.visitante}}
+                            <div ng-class="{'goles': match.goles}">
+                                {{match.visitante}}
+                                <ul ng-if="match.goles" ng-repeat="(name, num) in match.goles">
+                                    <li>{{name}}: num</li>
+                                </ul>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="results column g-6">
+        <div class="results column g-6" ng-if="vm.nextMatch">
             <table>
                 <thead>
                     <tr>
@@ -75,7 +85,7 @@
             <tbody>
                 <tr 
                     ng-class="{'camellos': team.name === 'FS Camellos'}"
-                    ng-repeat="team in vm.clasification | orderBy:'puntos':true:vm.test">
+                    ng-repeat="team in vm.clasification | orderBy:'puntos':true:vm.diffGoals">
                     <td>{{$index + 1}}</td>
                     <td>{{team.name}}</td>
                     <td>{{team.jugados}}</td>
@@ -89,17 +99,6 @@
                 </tr>
             </tbody>
         </table>
-
-        <table class="friends">
-            <tr>
-              <th>Name</th>
-              <th>Favorite Letter</th>
-            </tr>
-            <tr ng-repeat="friend in friends | orderBy:'favoriteLetter'">
-              <td>{{friend.name}}</td>
-              <td>{{friend.favoriteLetter}}</td>
-            </tr>
-          </table>
     </section>
 </div>
 
