@@ -1,9 +1,9 @@
 [
-   {
+    {
         "id": "1",
         "name": "Jornada 1",
-        "fecha": "23/09/2017",
-        "timestamp":1506117600,
+        "fecha": "2017-09-23",
+        "timestamp":1537653600,
         "vuelta" : "1",
         "partidos": [
             {
@@ -68,8 +68,8 @@
     {
         "id": "2",
         "name": "Jornada 2",
-        "fecha": "30/09/2017",
-        "timestamp":1506722400,
+        "fecha": "2017-09-30",
+        "timestamp":1538258400,
         "vuelta" : "1",
         "partidos": [
             {
@@ -126,16 +126,15 @@
                 "golesLocales": "1",
                 "golesVisitantes": "2",
                 "hora": "16:00",
-                "campo":"Pab. La cantera 2",
-
+                "campo":"Pab. La cantera 2"
             }
         ]
     },
     {
         "id": "3",
         "name": "Jornada 3",
-        "fecha": "7/10/2017",
-        "timestamp":1507327200,
+        "fecha": "2017-10-07",
+        "timestamp":1538863200,
         "vuelta" : "1",
         "partidos": [
             {
@@ -199,16 +198,15 @@
                 "golesLocales": "1",
                 "golesVisitantes": "2",
                 "hora": "19:45",
-                "campo": "Pab. La cantera 1",
-
+                "campo": "Pab. La cantera 1"
             }
         ]
     },
     {
         "id": "4",
         "name": "Jornada 4",
-        "fecha": "21/10/2017",
-        "timestamp":1508536800,
+        "fecha": "2017-10-21",
+        "timestamp":1540072800,
         "vuelta" : "1",
         "partidos": [
             {
@@ -276,8 +274,8 @@
     {
         "id": "5",
         "name": "Jornada 5",
-        "fecha": "28/10/2017",
-        "timestamp":1509141600,
+        "fecha": "2017-10-28",
+        "timestamp":1540677600,
         "vuelta" : "1",
         "partidos": [
             {
@@ -341,8 +339,8 @@
     {
         "id": "6",
         "name": "Jornada 6",
-        "fecha": "04/11/2017",
-        "timestamp":1509750000,
+        "fecha": "2017-11-04",
+        "timestamp":1541286000,
         "vuelta" : "1",
         "partidos": [
             {
@@ -406,8 +404,8 @@
     {
         "id": "7",
         "name": "Jornada 7",
-        "fecha": "11/11/2017",
-        "timestamp":1510354800,
+        "fecha": "2017-11-11",
+        "timestamp":1541890800,
         "vuelta" : "1",
         "partidos": [
             {
@@ -471,8 +469,8 @@
     {
         "id": "8",
         "name": "Jornada 8",
-        "fecha": "18/11/2016",
-        "timestamp":1518303600,
+        "fecha": "2017-11-18",
+        "timestamp":1542495600,
         "vuelta" : "1",
         "partidos": [
             {
@@ -536,8 +534,9 @@
     {
         "id": "9",
         "name": "Jornada 9",
-        "fecha": "25/11/2017",
-        "timestamp":1511564400,
+        "fecha2": "25-11-2017",
+        "fecha": "2017-11-25",
+        "timestamp":1543100400,
         "vuelta" : "1",
         "partidos": [
             {
@@ -601,8 +600,8 @@
     {
         "id": "10",
         "name": "Jornada 10",
-        "fecha": "02/12/2017",
-        "timestamp":1512169200,
+        "fecha": "2017-12-02",
+        "timestamp":1543705200,
         "vuelta" : "1",
         "partidos": [
             {
@@ -666,8 +665,8 @@
     {
         "id": "11",
         "name": "Jornada 11",
-        "fecha": "16/12/2017",
-        "timestamp":1513378800,
+        "fecha": "2017-12-16",
+        "timestamp":1544914800,
         "vuelta" : "1",
         "partidos": [
             {
@@ -731,7 +730,7 @@
     {
         "id": "12",
         "name": "Jornada 12",
-        "fecha": "13/01/2016",
+        "fecha": "2018-01-13",
         "timestamp": 1515798000,
         "vuelta" : "1",
         "partidos": [
@@ -796,7 +795,7 @@
     {
         "id": "13",
         "name": "Jornada 13",
-        "fecha": "20/01/2017",
+        "fecha": "2018-01-20",
         "timestamp": 1516402800,
         "vuelta" : "1",
         "partidos": [
@@ -861,7 +860,7 @@
     {
         "id": "14",
         "name": "Jornada 14",
-        "fecha": "27/01/2017",
+        "fecha": "2018-01-27",
         "timestamp":1517007600,
         "vuelta" : "1",
         "partidos": [
@@ -926,7 +925,7 @@
     {
         "id": "15",
         "name": "Jornada 15",
-        "fecha": "03/02/2017",
+        "fecha": "2018-02-03",
         "timestamp": 1517612400,
         "vuelta" : "1",
         "partidos": [
@@ -991,7 +990,7 @@
     {
         "id": "16",
         "name": "Jornada 16",
-        "fecha": "10/02/2017",
+        "fecha": "2018-02-10",
         "timestamp": 1518217200,
         "vuelta" : "2",
         "partidos": [
@@ -1056,7 +1055,7 @@
     {
         "id": "17",
         "name": "Jornada 17",
-        "fecha": "17/02/2017",
+        "fecha": "2018-02-17",
         "timestamp": 1518822000,
         "vuelta" : "2",
         "partidos": [
@@ -1121,7 +1120,7 @@
     {
         "id": "18",
         "name": "Jornada 18",
-        "fecha": "24/02/2015",
+        "fecha": "2018-02-24",
         "timestamp": 1519426800,
         "vuelta" : "2",
         "partidos": [
@@ -1186,7 +1185,7 @@
     {
         "id": "19",
         "name": "Jornada 19",
-        "fecha": "03/03/2017",
+        "fecha": "2018-03-03",
         "timestamp": 1520031600,
         "vuelta" : "2",
         "partidos": [
@@ -1251,7 +1250,7 @@
     {
         "id": "20",
         "name": "Jornada 20",
-        "fecha": "10/03/2017",
+        "fecha": "2018-03-10",
         "timestamp": 1520636400,
         "vuelta" : "2",
         "partidos": [
@@ -1316,7 +1315,7 @@
     {
         "id": "21",
         "name": "Jornada 21",
-        "fecha": "17/03/2017",
+        "fecha": "2018-03-17",
         "timestamp": 1521241200,
         "vuelta" : "2",
         "partidos": [
@@ -1381,8 +1380,8 @@
     {
         "id": "22",
         "name": "Jornada 22",
-        "fecha": "21/03/2015",
-        "timestamp": 1521846000,
+        "fecha": "2018-03-18",
+        "timestamp": 1521586800,
         "vuelta" : "2",
         "partidos": [
             {
@@ -1442,297 +1441,265 @@
                 "campo": "Pab. Leganés Norte"
             }
         ]
-	},
-	{
-		"id": "23",
-		"name": "Jornada 23",
-		"fecha": "28/03/2015",
-		"timestamp": 1523052000,
-		"vuelta" : "2",
-		"partidos": [
-			{
-				"local": "FS Galicia",
-				"visitante":"Descansa",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora" : "-----",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Trabenco<span class='hide-on-phones'> Zarzaquemada Fortuna</span>",
-				"visitante":"FS Los Míticos <span class='hide-on-phones'> de Leganes</span>",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora":"00:00",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Sport Leganes",
-				"visitante":"FS Kiwana All Star",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"16:00",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "FS Puro Perú",
-				"visitante":"FS Camellos",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"16:00",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS ADIL",
-				"visitante":"FS Luz Casanova",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"17:15",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "Cafu Ole FS",
-				"visitante":"FS Selección Botellín",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Cavs",
-				"visitante":"FS Pichanfles <span class='hide-on-phones'>Evolution</span>",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "Leganes FS Red Devils",
-				"visitante":"FS La Bombonera",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"19:45",
-				"campo":"La cantera Pab 1"
-			}
-	 	]
-	},
-	{
-		"id": "24",
-		"name": "Jornada 24",
-		"fecha": "11/04/2015",
-		"timestamp": 1523656800,
-		"vuelta" : "2",
-		"partidos": [
-			{
-				"local": "FS Puro Perú",
-				"visitante":"Descansa",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora" : "-----",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Pichanfles <span class='hide-on-phones'>Evolution</span>",
-				"visitante":"FS Trabenco<span class='hide-on-phones'> Zarzaquemada Fortuna</span>",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora":"00:00",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Luz Casanova",
-				"visitante":"FS Galicia",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"16:00",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS La Bombonera",
-				"visitante":"Cafu Ole FS",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"17:15",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Selección Botellín",
-				"visitante":"FS Cavs",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"17:15",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "FS Kiwana All Star",
-				"visitante":"FS ADIL",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "FS Los Míticos <span class='hide-on-phones'> de Leganes</span>",
-				"visitante":"FS Sport Leganes",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Camellos",
-				"visitante":"Leganes FS Red Devils",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"19:45",
-				"campo":"La cantera Pab 2"
-			}
-	 	]
-	},
-	{
-		"id": "25",
-		"name": "Jornada 25",
-		"fecha": "18/04/2015",
-		"timestamp": 1524261600,
-		"vuelta" : "2",
-		"partidos": [
-			{
-				"local": "Descansa",
-				"visitante":"FS Luz Casanova",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora" : "-----",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Trabenco<span class='hide-on-phones'> Zarzaquemada Fortuna</span>",
-				"visitante":"FS Selección Botellín",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora":"00:00",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Cavs",
-				"visitante":"FS La Bombonera",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"16:00",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS ADIL",
-				"visitante":"FS Los Míticos <span class='hide-on-phones'> de Leganes</span>",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"17:15",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "Leganes FS Red Devils",
-				"visitante":"FS Puro Perú",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"17:15",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Galicia",
-				"visitante":"FS Kiwana All Star",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "Cafu Ole FS",
-				"visitante":"FS Camellos",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Sport Leganes",
-				"visitante":"FS Pichanfles <span class='hide-on-phones'>Evolution</span>",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"19:45",
-				"campo":"La cantera Pab 2"
-			}
-	 	]
-	},
-	{
-		"id": "26",
-		"name": "Jornada 26",
-		"fecha": "25/04/2015",
-		"timestamp": 1525471200,
-		"vuelta" : "2",
-		"partidos": [
-			{
-				"local": "Leganes FS Red Devils",
-				"visitante":"Descansa",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora" : "-----",
-				"campo":"-----"
-			},
-			{
-				"local": "FS La Bombonera",
-				"visitante":"FS Trabenco<span class='hide-on-phones'> Zarzaquemada Fortuna</span>",
-				"golesLocales": "-",
-				"golesVisitantes": "-",
-				"hora":"00:00",
-				"campo":"-----"
-			},
-			{
-				"local": "FS Selección Botellín",
-				"visitante":"FS Sport Leganes",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"16:00",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Cavs",
-				"visitante":"FS Camellos",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"16:00",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "FS Kiwana All Star",
-				"visitante":"FS Luz Casanova",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"17:15",
-				"campo":"La cantera Pab 1"
-			},
-			{
-				"local": "FS Los Míticos <span class='hide-on-phones'> de Leganes</span>",
-				"visitante":"FS Galicia",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"18:30",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "FS Pichanfles <span class='hide-on-phones'>Evolution</span>",
-				"visitante":"FS ADIL",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"19:45",
-				"campo":"La cantera Pab 2"
-			},
-			{
-				"local": "FS Puro Perú",
-				"visitante":"Cafu Ole FS",
-				"golesLocales": "/",
-				"golesVisitantes": "/",
-				"hora":"19:45",
-				"campo":"La cantera Pab 1"
-			}
-	 	]
-	},
+    },
+    {
+        "id": "23",
+        "name": "Jornada 23",
+        "fecha": "2018-04-07",
+        "timestamp": 1523052000,
+        "vuelta" : "2",
+        "partidos": [
+            {
+                "local": "FS Gomorra",
+                "visitante": "FS Luna de Madrid",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "20:00",
+                "campo": "Pab Leganes Norte"
+            },
+            {
+                "local": "FS Superlopez",
+                "visitante": "Canarinha Pepinera FS",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "19:45",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "EUQT FS",
+                "visitante": "FS Rayo Lagones",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "18:30",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "FS Camellos",
+                "visitante": "Distrito 11 'A'",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Pab. La Cantera 1"
+            },
+            {
+                "local": "Cuerda Corta FS",
+                "visitante": "FS Futsal Nacional",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "17:15",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "FS Atletico Maetilico",
+                "visitante": "Ron Lauren",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"17:15",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Mini Eje",
+                "visitante": "FS Rainbow Warriors",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Carrascal 1"
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "name": "Jornada 24",
+        "fecha": "2018-04-14",
+        "timestamp": 1523656800,
+        "vuelta" : "2",
+        "partidos": [
+            {
+                "local": "FS Atletico Maetilico",
+                "visitante": "FS Gomorra",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "17:15",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "FS Rainbow Warriors",
+                "visitante": "Cuerda Corta FS",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "18:30",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "Ron Lauren",
+                "visitante": "FS Camellos",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "20:00",
+                "campo": "Pab Leganes Norte"
+            },
+            {
+                "local": "Distrito 11 'A'",
+                "visitante": "EUQT FS",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "FS Rayo Lagones",
+                "visitante": "FS Mini Eje",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "18:30",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Futsal Nacional",
+                "visitante": "FS Superlopez",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "Canarinha Pepinera FS",
+                "visitante": "FS Luna de Madrid",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Carrascal 1"
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Jornada 25",
+        "fecha": "2018-04-21",
+        "timestamp": 1524261600,
+        "vuelta" : "2",
+        "partidos": [
+            {
+                "local": "Canarinha Pepinera FS",
+                "visitante": "FS Gomorra",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "16:00",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Luna de Madrid",
+                "visitante": "FS Futsal Nacional",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "20:00",
+                "campo": "Pab Leganes Norte"
+            },
+            {
+                "local": "Cuerda Corta FS",
+                "visitante": "FS Rayo Lagones",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "17:15",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Mini Eje",
+                "visitante": "Distrito 11 'A'",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"18:39",
+                "campo": "Pab. La Cantera 2"
+            },
+            {
+                "local": "EUQT FS",
+                "visitante": "Ron Lauren",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "18:30",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Camellos",
+                "visitante": "FS Atletico Maetilico",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Superlopez",
+                "visitante": "FS Rainbow Warriors",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Uni. Carlos III"
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "name": "Jornada 26",
+        "fecha": "2018-05-05",
+        "timestamp": 1525478400000,
+        "vuelta" : "2",
+        "partidos": [
+            {
+                "local": "FS Gomorra",
+                "visitante": "FS Camellos",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "19:45",
+                "campo": "Pab. La cantera 2"
+            },
+            {
+                "local": "FS Rainbow Warriors",
+                "visitante": "FS Luna de Madrid",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "17:15",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "FS Atletico Maetilico",
+                "visitante": "EUQT FS",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "18:10",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "Ron Lauren",
+                "visitante": "FS Mini Eje",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"19:45",
+                "campo": "Uni. Carlos III"
+            },
+            {
+                "local": "Distrito 11 'A'",
+                "visitante": "Cuerda Corta FS",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora": "17:15",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Rayo Lagones",
+                "visitante": "FS Superlopez",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"18:30",
+                "campo": "Carrascal 1"
+            },
+            {
+                "local": "FS Futsal Nacional",
+                "visitante": "Canarinha Pepinera FS",
+                "golesLocales": "-",
+                "golesVisitantes": "-",
+                "hora":"20:00",
+                "campo": "Pab Leganes Norte"
+            }
+        ]
+    }
 ]

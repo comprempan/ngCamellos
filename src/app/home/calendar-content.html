@@ -1,0 +1,44 @@
+<p ng-if="vm.loading">cargando</p>
+<div id="content" ng-if="!vm.loading">
+    <section class="row">
+        <div class="results column g-6" ng-repeat="journey in vm.calendar">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">{{journey.name}} ({{journey.fecha | date : "dd-MM-yyyy"}})</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr 
+                        ng-class="{'camellos': match.local === 'FS Camellos' || match.visitante === 'FS Camellos'}"
+                        ng-repeat="match in journey.partidos">
+                        <td>
+                            <div ng-class="{'goles': match.goles}">
+                                {{match.local}}
+                                <ul ng-if="match.goles" ng-repeat="(name, num) in match.goles">
+                                    <li>{{name}}: {{num}}</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            {{match.golesLocales}}
+                        </td>
+                        <td>
+                            {{match.golesVisitantes}}
+                        </td>
+                        <td>
+                            <div ng-class="{'goles': match.goles}">
+                                {{match.visitante}}
+                                <ul ng-if="match.goles" ng-repeat="(name, num) in match.goles">
+                                    <li>{{name}}: {{num}}</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+

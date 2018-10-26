@@ -5,7 +5,7 @@
         .config(function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise("/");
             $stateProvider
-				.state("cm", {
+                .state("cm", {
                     abstract: true,
                     url: "/cm",
                     templateUrl: "app/home/home.html"
@@ -25,27 +25,27 @@
                 })
                 .state('cm.resultados', {
                     url: '^/resultados',
-                    templateUrl: 'app/home/home-content.html',
-                    controller: 'HomeController',
+                    templateUrl: 'app/home/results-content.html',
+                    controller: 'ResultsController',
                     controllerAs: 'vm',
                     resolve: {
                         onEnter: function() {
                             var body = document.body;
                             body.id = 'cm';
-                            document.documentElement.id = "cmHomeHtml";
+                            document.documentElement.id = "cmResultsHtml";
                         }
                     }
                 })
                 .state('cm.calendario', {
                     url: '^/calendario',
-                    templateUrl: 'app/home/home-content.html',
-                    controller: 'HomeController',
+                    templateUrl: 'app/home/calendar-content.html',
+                    controller: 'CalendarController',
                     controllerAs: 'vm',
                     resolve: {
                         onEnter: function() {
                             var body = document.body;
                             body.id = 'cm';
-                            document.documentElement.id = "cmHomeHtml";
+                            document.documentElement.id = "cmCalendarHtml";
                         }
                     }
                 })
