@@ -64,11 +64,12 @@
             var result;
             var matchDate;
             var deferred = $q.defer();
+            var test;
             getCalendar().then(function(response) {
                 response.data.reverse();
                 response.data.some(function(match, index) {
-                    matchDate = moment(match.timestamp);
-                   
+                    //matchDate = moment(match.timestamp);
+                    matchDate = moment.unix(match.timestamp);
                     if(matchDate.isSameOrBefore(currentDate)) {
                         result = match;
                         return true;

@@ -26,8 +26,29 @@
         }
 
         function _getData() {
+            moment.locale('es');
             var currentDate = new Date();
             var current = moment();
+
+            var jander;
+            var klander;
+
+            console.log("current", current);
+            console.log(current.format("X"));
+            console.log("fecha", moment.unix(1540542534));
+
+            moment.locale("es");
+            klander = moment("2019-06-01").add(1, 'days').format("X");
+            jander = moment.unix(1541286000);
+            jander.locale(false);
+
+
+
+            //console.log("fecha", moment("2018-09-29"), moment("2018-09-29").format("X"), moment.unix(1538172000).utc());
+
+            console.log("jander", klander, moment.unix(1541286000), jander);
+
+            
             
             //matchesService.getPreviousMatch(currentDate)
             matchesService.getPreviousMatch2(current)

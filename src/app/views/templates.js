@@ -1,6 +1,6 @@
 angular.module('templates-main', ['app/components/header/header.html', 'app/home/calendar-content.html', 'app/home/home-content.html', 'app/home/home.html', 'app/home/results-content.html']);
 
-angular.module("app/components/header/header.html", []).run(["$templateCache", function($templateCache) {
+angular.module("app/components/header/header.html", []).run(["$templateCache", function ($templateCache) {
   $templateCache.put("app/components/header/header.html",
     "<header>\n" +
     "	<div id=\"title\">\n" +
@@ -28,7 +28,7 @@ angular.module("app/components/header/header.html", []).run(["$templateCache", f
     "");
 }]);
 
-angular.module("app/home/calendar-content.html", []).run(["$templateCache", function($templateCache) {
+angular.module("app/home/calendar-content.html", []).run(["$templateCache", function ($templateCache) {
   $templateCache.put("app/home/calendar-content.html",
     "<p ng-if=\"vm.loading\">cargando</p>\n" +
     "<div id=\"content\" ng-if=\"!vm.loading\">\n" +
@@ -77,7 +77,7 @@ angular.module("app/home/calendar-content.html", []).run(["$templateCache", func
     "");
 }]);
 
-angular.module("app/home/home-content.html", []).run(["$templateCache", function($templateCache) {
+angular.module("app/home/home-content.html", []).run(["$templateCache", function ($templateCache) {
   $templateCache.put("app/home/home-content.html",
     "<p ng-if=\"vm.loading\">cargando</p>\n" +
     "<div id=\"content\" ng-if=\"!vm.loading\">\n" +
@@ -187,7 +187,7 @@ angular.module("app/home/home-content.html", []).run(["$templateCache", function
     "");
 }]);
 
-angular.module("app/home/home.html", []).run(["$templateCache", function($templateCache) {
+angular.module("app/home/home.html", []).run(["$templateCache", function ($templateCache) {
   $templateCache.put("app/home/home.html",
     "<cm-header></cm-header>\n" +
     "<div id=\"container\">\n" +
@@ -195,7 +195,7 @@ angular.module("app/home/home.html", []).run(["$templateCache", function($templa
     "</div>");
 }]);
 
-angular.module("app/home/results-content.html", []).run(["$templateCache", function($templateCache) {
+angular.module("app/home/results-content.html", []).run(["$templateCache", function ($templateCache) {
   $templateCache.put("app/home/results-content.html",
     "<p ng-if=\"vm.loading\">cargando</p>\n" +
     "<div id=\"content\" ng-if=\"!vm.loading\">\n" +
